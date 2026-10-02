@@ -12,12 +12,64 @@
 </head>
 <body>
 <header>
+    <div class="logo">
+        <a href="index.html">Amateur League Manager</a>
+    </div>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="teams.html">Команды</a>
+    </nav>
+
+    <div class="header-side-content">
+        <a href="login.html">Войти</a>
+    </div>
 </header>
 
 <main>
+    <section class="auth-section">
+        <div class="auth-card">
+            <h1>Вход</h1>
+
+            <form class="auth-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="email">Электронная почта</label>
+                    <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@mail.ru"
+                            autocomplete="email"
+                            required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            minlength="8"
+                            maxlength="128"
+                            autocomplete="current-password"
+                            required
+                    >
+                </div>
+
+                <button type="submit">Войти</button>
+            </form>
+
+            <p class="auth-link">
+                Нет аккаунта?
+                <a href="#">Зарегистрироваться</a>
+            </p>
+        </div>
+    </section>
 </main>
 
 <footer>
+    <p>Amateur League Manager</p>
 </footer>
 </body>
 </html>
