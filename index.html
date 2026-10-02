@@ -1,10 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Amateur League Manager</title>
 </head>
 <body>
+<header>
+    <div class="logo">
+        <a href="index.html">Amateur League Manager</a>
+    </div>
 
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="teams.html">Команды</a>
+    </nav>
+
+    <div class="header-side-content">
+        <a href="login.html">Войти</a>
+    </div>
+</header>
+
+<main>
+    <section class="matches-section">
+        <h1>Ближайшие матчи</h1>
+
+        <div class="matches-list">
+            <article class="match-card">
+                <div class="match-date">5 октября, 18:00</div>
+
+                <div class="match-teams">
+                    <span>FC Forward</span>
+                    <span>—</span>
+                    <span>Storm United</span>
+                </div>
+            </article>
+
+            <article class="match-card">
+                <div class="match-date">6 октября, 16:30</div>
+
+                <div class="match-teams">
+                    <span>Red Lions</span>
+                    <span>—</span>
+                    <span>North City</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="matches-section">
+        <h2>Последние результаты</h2>
+
+        <div class="matches-list">
+            <article class="match-card">
+                <div class="match-date">28 сентября</div>
+
+                <div class="match-teams">
+                    <span>Storm United</span>
+                    <strong>2 : 1</strong>
+                    <span>Red Lions</span>
+                </div>
+            </article>
+
+            <article class="match-card">
+                <div class="match-date">27 сентября</div>
+
+                <div class="match-teams">
+                    <span>North City</span>
+                    <strong>0 : 3</strong>
+                    <span>FC Forward</span>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Amateur League Manager</p>
+</footer>
 </body>
 </html>
