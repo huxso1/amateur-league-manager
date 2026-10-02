@@ -121,6 +121,60 @@ footer {
     background: #202124;
 }
 
+.teams-section h1 {
+    margin-top: 0;
+}
+
+.teams-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    width: calc(50% - 10px);
+    padding: 20px;
+
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.team-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+
+    flex-shrink: 0;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #ffffff;
+    background: #202124;
+    border-radius: 50%;
+}
+
+.team-info h2 {
+    margin: 0 0 8px;
+
+    font-size: 20px;
+}
+
+.team-info p {
+    margin: 0;
+
+    color: #666666;
+}
+
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -161,5 +215,13 @@ footer {
 
     .matches-section h2 {
         font-size: 24px;
+    }
+
+    .teams-list {
+        flex-direction: column;
+    }
+
+    .team-card {
+        width: 100%;
     }
 }
