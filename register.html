@@ -1,10 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+    <title>Регистрация — Amateur League Manager</title>
 </head>
 <body>
+<header>
+    <div class="logo">
+        <a href="index.html">Amateur League Manager</a>
+    </div>
 
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="teams.html">Команды</a>
+    </nav>
+
+    <div class="header-side-content">
+        <a href="login.html">Войти</a>
+    </div>
+</header>
+
+<main>
+    <section class="auth-section">
+        <div class="auth-card">
+            <h1>Регистрация</h1>
+
+            <form class="auth-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            minlength="2"
+                            maxlength="50"
+                            autocomplete="name"
+                            required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Электронная почта</label>
+                    <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@mail.ru"
+                            maxlength="254"
+                            autocomplete="email"
+                            required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            minlength="8"
+                            maxlength="128"
+                            autocomplete="new-password"
+                            required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password-confirmation">Повторите пароль</label>
+                    <input
+                            type="password"
+                            id="password-confirmation"
+                            name="password_confirmation"
+                            minlength="8"
+                            maxlength="128"
+                            autocomplete="new-password"
+                            required
+                    >
+                </div>
+
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+
+            <p class="auth-link">
+                Уже есть аккаунт?
+                <a href="login.html">Войти</a>
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Amateur League Manager</p>
+</footer>
 </body>
 </html>
