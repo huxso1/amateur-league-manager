@@ -12,6 +12,7 @@ import { RouterLink } from 'vue-router'
       <nav>
         <RouterLink to="/">Главная</RouterLink>
         <RouterLink to="/teams">Команды</RouterLink>
+        <RouterLink to="/fantasy">Fantasy</RouterLink>
       </nav>
 
       <RouterLink class="login-link" to="/login">

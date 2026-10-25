@@ -4,7 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import TeamsView from '../views/TeamsView.vue'
 import LoginView from '../views/LoginView.vue'
 import RegisterView from '../views/RegisterView.vue'
-
+import FantasyView from '../views/FantasyView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
 
@@ -28,6 +28,11 @@ const router = createRouter({
       path: '/register',
       name: 'register',
       component: RegisterView,
+    },
+    {
+      path: '/fantasy',
+      name: 'fantasy',
+      component: FantasyView,
     },
   ],
 })
