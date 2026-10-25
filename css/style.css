@@ -126,8 +126,8 @@ footer {
 }
 
 .teams-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -136,7 +136,6 @@ footer {
     align-items: center;
     gap: 16px;
 
-    width: calc(50% - 10px);
     padding: 20px;
 
     background: #ffffff;
