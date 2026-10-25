@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #202124;
+  background: #f5f6f8;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 24px 16px;
+  }
+}
