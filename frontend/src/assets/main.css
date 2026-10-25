@@ -1,3 +1,18 @@
+:root {
+  --color-primary: #176bff;
+  --color-primary-dark: #102a5e;
+  --color-accent: #00cfc8;
+  --color-violet: #6c4dff;
+
+  --color-background: #f4f7fb;
+  --color-surface: #ffffff;
+
+  --color-text: #151a2d;
+  --color-text-muted: #697386;
+
+  --color-border: #dfe5ef;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,13 +27,16 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+
   font-family: Arial, sans-serif;
-  color: #202124;
-  background: #f5f6f8;
+
+  color: var(--color-text);
+  background: var(--color-background);
 }
 
 .app {
   min-height: 100vh;
+
   display: flex;
   flex-direction: column;
 }
@@ -26,8 +44,10 @@ body {
 .main-content {
   width: 100%;
   max-width: 1000px;
+
   margin: 0 auto;
   padding: 40px 20px;
+
   flex: 1;
 }
 
